@@ -2,5 +2,10 @@
 
 #heroimagebg {
   background-image: url("../img/1.jpg");
+  background-size: cover;
   height: 650px;
+}
+
+.bgdarktransparent {
+  background-color: rgba(0, 0, 0, 0.75);
 }
