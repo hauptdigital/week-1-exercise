@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/hauptdigital/week-1-exercise/issues"
   },
-  "homepage": "https://github.com/hauptdigital/week-1-exercise#readme"
+  "homepage": "https://github.com/hauptdigital/week-1-exercise#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "htmlhint": "^0.11.0",
+    "prettier": "^1.19.1"
+  }
 }
