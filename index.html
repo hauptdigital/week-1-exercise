@@ -8,6 +8,110 @@
   </head>
   <body>
     <header>
+      <!-- MODALS -->
+      <!-- Sign-in -->
+      <div
+        class="modal fade"
+        id="signin"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="signModaltitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signModaltitle">Sign in</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="EmailSignIn">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="EmailSignIn"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="PasswordSignIn">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="PasswordSignIn"
+                  />
+                </div>
+                <div class="mt-2">
+                  <button type="button" class="btn btn-danger btn-block btn-lg">
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Register -->
+      <div
+        class="modal fade"
+        id="register"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="registerModaltitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="registerModaltitle">Register</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="EmailSignIn">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="EmailRegister"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="PasswordRegister">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="PasswordRegister"
+                  />
+                </div>
+                <div class="mt-2">
+                  <button type="button" class="btn btn-danger btn-block btn-lg">
+                    Register
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
       <nav class="navbar navbar-expand-md navbar-light bg-light shadow-lg">
         <a class="navbar-brand" href="#">
           <div class="row">
@@ -47,11 +151,21 @@
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
-            <a class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" href="#">
+            <a
+              class="btn btn-outline-success my-2 my-sm-0 mr-sm-2"
+              data-toggle="modal"
+              data-target="#signin"
+              href="#"
+            >
               Sign in
             </a>
 
-            <a class="btn btn-outline-danger my-2 my-sm-0" href="#">
+            <a
+              class="btn btn-outline-danger my-2 my-sm-0"
+              data-toggle="modal"
+              data-target="#register"
+              href="#"
+            >
               Register
             </a>
           </form>
@@ -506,7 +620,55 @@
           </div>
         </div>
       </section>
-      <section id="contact"></section>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#staticBackdrop"
+      >
+        Launch static backdrop modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-backdrop="static"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
