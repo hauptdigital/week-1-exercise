@@ -136,18 +136,17 @@
         </a>
         <div class="navbar-collapse collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#advantages" class="nav-link">advantages</a>
+            <li class="nav-item border-info-right">
+              <a href="#advantages" class="nav-link">from zero to hero</a>
+            </li>
+            <li class="nav-item border-info-right">
+              <a href="#features" class="nav-link">our programming languages</a>
+            </li>
+            <li class="nav-item border-info-right">
+              <a href="#team" class="nav-link">our team</a>
             </li>
             <li class="nav-item">
-              <a href="#features" class="nav-link">features</a>
-            </li>
-            <li class="nav-item">
-              <a href="#team" class="nav-link">team</a>
-            </li>
-            <li class="nav-item"><a href="#map" class="nav-link">map</a></li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">contact</a>
+              <a href="#map" class="nav-link">let's meet</a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
@@ -179,16 +178,23 @@
           <div class="row">
             <div class="col-lg-6">
               <div class="jumbotron text-white bgdarktransparent">
-                <h1 class="h1">
-                  Hello, <span class="text-muted">world!</span>
+                <h1 class="display-4">
+                  Welcome to <span class="text-muted">codebuddies!</span>
                 </h1>
                 <p class="lead">
-                  This is a simple hero unit, a simple jumbotron-style component
-                  for calling extra attention to featured content or
-                  information.
+                  codebuddies is a community of helpful developers that review
+                  your code before you deploy it.
+                </p>
+                <p class="lead">
+                  Make your code better!
                 </p>
                 <hr class="my-4 bg-white" />
-                <a class="btn btn-info btn-lg" href="#" role="button"
+                <a
+                  class="btn btn-info btn-lg"
+                  data-toggle="modal"
+                  data-target="#register"
+                  href="#"
+                  role="button"
                   >Find your buddy now <span class="text-danger">♥</span></a
                 >
               </div>
@@ -216,8 +222,8 @@
       <section id="advantages">
         <div class="container">
           <div class="container text-center mt-5 mb-5">
-            <h2 class="h1">
-              Pick your <span class="text-muted">codingbuddy!</span>
+            <h2 class="display-4">
+              From zero to <span class="text-muted"><b>Hero!</b></span>
             </h2>
           </div>
           <div class="row">
@@ -229,13 +235,11 @@
                   class="card-image-top rounded-circle w-50 m-auto img-advantages"
                 />
                 <div class="card-body">
-                  <h2 class="card-title">Morpheus</h2>
+                  <h2 class="card-title">Does this look familiar?</h2>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolores quod consectetur fugit ab! Earum illo veritatis
-                    placeat commodi culpa. Laudantium voluptatum voluptatibus
-                    delectus pariatur voluptatem incidunt vero placeat accusamus
-                    iure.
+                    Frustated from your last coding experience? Tired of not
+                    understanding your own code? What is a debug and can it fly
+                    like other insects? Can't find your repository?
                   </p>
                 </div>
               </div>
@@ -260,13 +264,11 @@
                   class="card-image-top rounded-circle w-50 m-auto img-advantages"
                 />
                 <div class="card-body">
-                  <h2 class="card-title">Morpheus</h2>
+                  <h2 class="card-title text-muted">Try codebuddies!</h2>
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolores quod consectetur fugit ab! Earum illo veritatis
-                    placeat commodi culpa. Laudantium voluptatum voluptatibus
-                    delectus pariatur voluptatem incidunt vero placeat accusamus
-                    iure.
+                    Search for a codebuddy that points out errors in your code
+                    and let's you know when you've built s*%t. Working in pairs
+                    is the best thing to do.
                   </p>
                 </div>
               </div>
@@ -274,7 +276,11 @@
           </div>
           <div class="container">
             <div class="text-center">
-              <a href="#" class="btn btn-info btn-lg shadow-lg"
+              <a
+                href="#"
+                class="btn btn-info btn-lg shadow-lg"
+                data-toggle="modal"
+                data-target="#register"
                 >Register now <span class="text-danger">♥</span></a
               >
             </div>
@@ -384,14 +390,16 @@
                   <div class="row pt-5">
                     <div class="col-md-7 pt-5">
                       <div>
-                        <h2>
-                          First featurette
-                          <span class="text-muted">It’ll blow your mind.</span>
-                        </h2>
-                        <p class="lead">
-                          Donec ullamcorper nulla non metus auctor fringilla.
-                          Vestibulum id ligula porta felis euismod semper.
-                        </p>
+                        <blockquote class="blockquote">
+                          <p class="h3">
+                            There is a difference between knowing the path and
+                            walking the path.
+                          </p>
+                          <footer class="blockquote-footer">
+                            Our famous codebuddy
+                            <cite title="Source Title">Morpheus</cite>
+                          </footer>
+                        </blockquote>
                       </div>
                     </div>
                     <div class="col-md-5">
@@ -409,14 +417,15 @@
                   <div class="row pt-5">
                     <div class="col-md-7 pt-5">
                       <div>
-                        <h2>
-                          First featurette
-                          <span class="text-muted">It’ll blow your mind.</span>
-                        </h2>
-                        <p class="lead">
-                          Donec ullamcorper nulla non metus auctor fringilla.
-                          Vestibulum id ligula porta felis euismod semper.
-                        </p>
+                        <blockquote class="blockquote">
+                          <p class="h3">
+                            We meet again Mr. Anderson
+                          </p>
+                          <footer class="blockquote-footer">
+                            Our call center agent
+                            <cite title="Source Title">Agent Smith</cite>
+                          </footer>
+                        </blockquote>
                       </div>
                     </div>
                     <div class="col-md-5">
@@ -434,14 +443,16 @@
                   <div class="row pt-5">
                     <div class="col-md-7 pt-5">
                       <div>
-                        <h2>
-                          First featurette
-                          <span class="text-muted">It’ll blow your mind.</span>
-                        </h2>
-                        <p class="lead">
-                          Donec ullamcorper nulla non metus auctor fringilla.
-                          Vestibulum id ligula porta felis euismod semper.
-                        </p>
+                        <blockquote class="blockquote">
+                          <p class="h3">
+                            You have to change your life if you’re not happy,
+                            and wake up if things aren’t going the way you want.
+                          </p>
+                          <footer class="blockquote-footer">
+                            Our certified hacktivist
+                            <cite title="Source Title">Mr. Anderson</cite>
+                          </footer>
+                        </blockquote>
                       </div>
                     </div>
                     <div class="col-md-5">
@@ -459,14 +470,17 @@
                   <div class="row pt-5">
                     <div class="col-md-7 pt-5">
                       <div>
-                        <h2>
-                          First featurette
-                          <span class="text-muted">It’ll blow your mind.</span>
-                        </h2>
-                        <p class="lead">
-                          Donec ullamcorper nulla non metus auctor fringilla.
-                          Vestibulum id ligula porta felis euismod semper.
-                        </p>
+                        <blockquote class="blockquote">
+                          <p class="h3">
+                            I know why you're here, Neo. I know what you've been
+                            doing...
+                          </p>
+                          <footer class="blockquote-footer">
+                            Our fictional character
+                            <cite title="Source Title">Trinity</cite> from the
+                            matrix franchise
+                          </footer>
+                        </blockquote>
                       </div>
                     </div>
                     <div class="col-md-5">
@@ -484,39 +498,16 @@
                   <div class="row pt-5">
                     <div class="col-md-7 pt-5">
                       <div>
-                        <h2>
-                          First featurette
-                          <span class="text-muted">It’ll blow your mind.</span>
-                        </h2>
-                        <p class="lead">
-                          Donec ullamcorper nulla non metus auctor fringilla.
-                          Vestibulum id ligula porta felis euismod semper.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="text-center">
-                        <img
-                          src="img/buddy5.jpg"
-                          class="rounded-circle w-50"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row pt-5">
-                    <div class="col-md-7 pt-5">
-                      <div>
-                        <h2>
-                          First featurette
-                          <span class="text-muted">It’ll blow your mind.</span>
-                        </h2>
-                        <p class="lead">
-                          Donec ullamcorper nulla non metus auctor fringilla.
-                          Vestibulum id ligula porta felis euismod semper.
-                        </p>
+                        <blockquote class="blockquote">
+                          <p class="h3">
+                            I'd ask you to sit down, but, you're not going to
+                            anyway. And don't worry about the vase.
+                          </p>
+                          <footer class="blockquote-footer">
+                            Our famous know-it-all
+                            <cite title="Source Title">Oracle</cite>
+                          </footer>
+                        </blockquote>
                       </div>
                     </div>
                     <div class="col-md-5">
@@ -583,7 +574,7 @@
                 </div>
               </div>
               <div class="col">
-                <div class="bd-example">
+                <div>
                   <address>
                     <strong class="h5">codebuddies fantasy GmbH</strong><br />
                     <span class="text-info"
